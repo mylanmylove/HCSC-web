@@ -1,0 +1,538 @@
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .banner {
+            padding-top: 300px;
+            width: 100%;
+        }
+        
+        .banner-text-content {
+            background-color: rgba(10, 10, 10, 0.5);
+            line-height: 28.8px;
+            padding: 35px;
+            margin-left: 50px;
+            width: 40%;
+            margin-bottom: 200px;
+            margin-top: -25px;
+            text-align: left;
+        }
+        
+        .banner-heading {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 40px;
+            line-height: 1.5;
+            color: azure;
+        }
+        
+        .banner-desc {
+            font-family: "Ubuntu", sans-serif;
+            color: #ffffff;
+        }
+        
+        .banner-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .banner-links .button-primary:first-child {
+            margin-right: 20px;
+        }
+        
+        .button-primary {
+            font-family: "Ubuntu", sans-serif;
+            display: inline-block;
+            border: 0;
+            padding: 10px 25px;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            background-color: transparent;
+            text-decoration: none;
+            color: black;
+            /*background-color: #716DF2;
+    border: 2px solid #716DF2;*/
+            background-color: #90FAFF;
+            border: 2px solid #90FAFF;
+        }
+        
+        .button-primary:hover {
+            color: #90FAFF;
+            background: none;
+        }
+        
+        .banner {
+            background: url("2.png") no-repeat center;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        @media screen and (max-width: 850px) {
+            .banner-text-content {
+                width: 90%;
+                margin-left: 0;
+            }
+            .banner-heading {
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .banner-links {
+                display: flex;
+                justify-content: center;
+            }
+            .banner-des {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width: 376px) {
+            .banner .button-primary {
+                padding: 5px 5px;
+            }
+        }
+        
+        .plusbanner {
+            margin-top: 20px;
+            background: #182333;
+            margin-top: 70px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 3%;
+            padding-right: 7%;
+            padding-bottom: 3%;
+            padding-left: 6%;
+            color: #90FAFF;
+        }
+        
+        .plusbanner-heading {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+        
+        .plusbanner-links {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .plusbanner-button {
+            display: flex;
+            justify-content: center;
+            font-family: "Ubuntu", sans-serif;
+            display: inline-block;
+            border: 0;
+            padding: 10px 25px;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            background-color: transparent;
+            text-decoration: none;
+            color: black;
+            background-color: #90FAFF;
+            border: 2px solid #90FAFF;
+        }
+        
+        @media screen and (max-width: 850px) {
+            .plusbanner-heading {
+                text-align: center;
+            }
+        }
+        
+        .plusbanner-button:hover {
+            color: #90FAFF;
+            background: none;
+        }
+        /*Đây là nav bar*/
+        
+        .header {
+            font-family: "Ubuntu", sans-serif;
+            background-color: #6EDFE3;
+            display: flex;
+            align-items: center;
+            padding-bottom: 2px;
+            padding-right: 40px;
+        }
+        /*Đây là chữ HCSC*/
+        
+        .header-logo {
+            display: block;
+            margin-left: -35px;
+            /*70*/
+            font-size: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #0C1D41;
+        }
+        
+        .header-logo-image {
+            display: block;
+            margin-left: 70px;
+            max-width: 125px;
+        }
+        /*block logo này mới thêm vào*/
+        
+        .header-menu {
+            font-size: 18px;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        
+        .header-menu-item {
+            display: block;
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 30px;
+            transition: color 0.3s ease;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        .header-menu-item:not(:first-child) {
+            margin-left: 20px;
+        }
+        
+        .header-menu-item:hover {
+            color: #22026d;
+        }
+        
+        .header-input {
+            display: none;
+        }
+        
+        .header-bars-btn {
+            width: 28px;
+            height: 28px;
+            color: #ffffff;
+            display: none;
+        }
+        
+        .header-overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: none;
+            animation: fadeIn linear 0.2s;
+        }
+        
+        .header-mobile {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 320px;
+            max-width: 100%;
+            background: #ffffff;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: all linear 0.2s;
+        }
+        
+        .header-mobile-list {
+            margin-top: 24px;
+            padding: 20px;
+        }
+        
+        .header-mobile-link {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 8px 0;
+            font-size: 1.4rem;
+        }
+        
+        .header-mobile-close {
+            width: 28px;
+            height: 28px;
+            color: #666;
+            position: absolute;
+            top: 0.4rem;
+            right: 1rem;
+        }
+        
+        .header-input:checked~.header-overlay {
+            display: block;
+        }
+        
+        .header-input:checked~.header-mobile {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        
+        @media (max-width: 1023px) {
+            .header-bars-btn {
+                display: block;
+            }
+            .header-menu-item {
+                display: none;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            width: 97%;
+        }
+        /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+        
+        .sticky+.content {
+            padding-top: 10px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        img {
+            /*display: block;*/
+            max-width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            line-height: 1;
+            text-align: center;
+        }
+        /*# sourceMappingURL=style.css.map */
+        
+        #aboutus {
+            padding: 50px 50px;
+            color: rgb(42, 43, 94);
+            background-color: rgb(206, 249, 255);
+            display: grid;
+            grid-row-gap: 50px;
+            max-width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        @media screen and (min-width:850px) {
+            #aboutus {
+                padding: 150px 150px;
+                color: rgb(42, 43, 94);
+                background-color: rgb(206, 249, 255);
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 2.5%;
+                grid-row-gap: 50px;
+                max-width: 80%;
+                margin: 0 auto;
+                text-align: left;
+            }
+        }
+        
+        #container_muc {
+            padding-bottom: 80px;
+            padding-top: 80px;
+            background-color: rgb(154, 213, 223);
+            font-family: "Ubuntu", sans-serif;
+        }
+        
+        #cacmuc {
+            display: grid;
+            grid-row-gap: 25px;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        
+        #cacmuc div {
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            padding-bottom: 20px;
+        }
+        
+        @media screen and (min-width:850px) {
+            #cacmuc {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-column-gap: 2.5%;
+                grid-row-gap: 50px;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+            #cacmuc div {
+                background-color: rgb(255, 255, 255);
+                padding: 15px;
+                box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+                text-align: left;
+            }
+        }
+        
+         :root {
+            --text-color: #28E8E8;
+            --content-color: #2D0455;
+        }
+        
+        #ban {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 50px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        #ban div {
+            transition-duration: 0.5s;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            height: max-content;
+            border-radius: 10%;
+        }
+        
+        #ban main {
+            color: var(--content-color);
+        }
+        
+        #ban h2 {
+            color: var(--text-color);
+        }
+        
+        #ban p {
+            color: rgba(10, 10, 10, 0.5);
+            ;
+        }
+        
+        #ban img {
+            width: 75px;
+            height: 75px;
+        }
+        
+        img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        @media screen and (min-width:850px) {
+            #ban {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 100px;
+                grid-row-gap: 50px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+        }
+        
+        #ban div:hover {
+            transform: scale(1.2);
+        }
+        /*.maps_wrapper {
+        padding-bottom: 30px;
+    }*/
+        
+        #bando {
+            width: 90%;
+            height: 450px;
+            border: 0;
+            padding-bottom: 30px;
+        }
+        /*@media screen and (min-width:850px) {
+            #bando {
+                width: 50%;
+                height: 450px;
+                border: 0;
+                margin-left: 45%;
+            }
+        } Sau này thêm box contact us bên cạnh map thì xài cái này.*/
+        
+        @media screen and (min-width:850px) {
+            #bando {
+                width: 900px;
+                height: 450px;
+                border: 0;
+            }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3px 3px;
+            background-color: #90FAFF;
+            color: #182333;
+        }
+        
+        .lienhe {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #anh {
+            flex-basis: 40%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            max-width: 200px;
+        }
+        
+        #thongtin {
+            font-size: 20px;
+            padding-left: 20px;
+            text-align: left;
+        }
+        
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 43px;
+            width: 50px;
+            height: 50px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #182333;
+            color: #90FAFF;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+        }
+        
+        #myBtn:hover {
+            background-color: #555;
+        }

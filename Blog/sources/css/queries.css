@@ -1,0 +1,49 @@
+@media only screen and (max-width : 1000px){
+    .col{
+        width: 100%;
+    }
+    .preview{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .preview li{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    .span_2_of_7{
+        margin-left: 10%;
+    }
+
+    .input-box{
+        width: 80%;
+    }
+
+    .nav-bar{
+        margin-right: 5%;
+    }
+    
+}
+
+@media only screen and (max-width : 855px){
+    .nav-bar{
+        transition: 0ms;
+        visibility: hidden;
+    }
+    .menu{
+        transition: 0ms;
+        visibility: visible;
+    }
+
+    header{
+        background-image: linear-gradient(to left top, rgba(4, 68, 133, 0.9) 45%, rgba(48, 197, 185, 0.95)), url("../image/theme-img3.png");
+    }
+}
+
+@media only screen and (max-width : 665px){
+    .preview li a img{
+        height: auto;
+    }  
+} 

@@ -1,0 +1,57 @@
+@media only screen and (max-width : 1000px){
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-bar{
+        margin-right: 5%;
+    }
+
+    .theme-img
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }    
+
+    .title{
+        font-size: 120%;
+    }
+
+    .summary{
+        font-size: 80%;
+    }
+
+    .author{
+        font-size: 95%;
+    }
+
+    .date{
+        font-size: 80%;
+    }
+
+    .ava-set img{
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .ava-inf{
+        line-height: 25px;
+    }
+
+    .content{
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width : 855px){
+    .nav-bar{
+        transition: 0ms;
+        visibility: hidden;
+    }
+    .menu{
+        transition: 0ms;
+        visibility: visible;
+    }
+}

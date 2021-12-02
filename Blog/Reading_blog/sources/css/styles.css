@@ -1,0 +1,243 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #f8f8e2;
+    text-rendering: optimizeLegibility;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+/************************************Reusable**********************************************************/
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.hover-orange:hover,
+.hover-orange:active {
+    color: rgb(90, 152, 211);
+    transform: translate(0.2);
+}
+
+.hover-white:hover,
+.hover-white:active {
+    color: white;
+    transform: translate(0.3);
+}
+
+::placeholder {
+    text-align: center;
+    opacity: 0.2;
+    font-size: 125%;
+}
+
+section {
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+/**************************************Header**********************************************************/
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.logo {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.theme-img {
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 20px;
+    width: 40%
+}
+
+.nav {
+    background-color: #f8f8e2;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 0px;
+    transition: 300ms;
+    box-shadow: 0px 5px 5px 2px #517fc5;
+}
+
+header {
+    background-color: #f8f8e2;
+    margin-bottom: 10px;
+}
+
+.nav-bar {
+    float: right;
+    list-style: none;
+    margin-right: 60px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: rgb(90, 152, 211);
+    font-size: 80%;
+    font-weight: 700;
+    transition: 200ms;
+    padding-bottom: 3px;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active {
+    color: rgb(64, 119, 238);
+    font-weight: bold;
+    font-size: 90%;
+}
+
+footer {
+    position: fixed;
+    height: 50px;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.menu {
+    color: rgb(200, 200, 224);
+    font-size: 200%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    visibility: hidden;
+}
+
+.menu-list {
+    list-style: none;
+    width: 300px;
+    border: 1px solid whitesmoke;
+    padding: 0px;
+    margin: 20px;
+    background-color: rgb(16, 16, 34);
+    text-align: center;
+    lighting-color: whitesmoke;
+    font-weight: 100;
+    font-size: 90%;
+    line-height: 40px;
+    position: absolute;
+    right: 30px;
+    top: 75px;
+    visibility: hidden;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    width: 300px;
+    border: 1px solid whitesmoke;
+}
+
+.menu-list li a:hover,
+.menu-list li a:active {
+    color: rgb(90, 152, 211);
+}
+
+.sticky {
+    background-color: rgb(16, 16, 34, 0.9);
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 900;
+    height: 100px;
+    position: fixed;
+}
+
+.sticky.logo {
+    height: 30px;
+    width: auto;
+}
+
+.sticky.nav-bar {
+    position: fixed;
+    top: 20px;
+}
+
+.post-head {
+    margin-left: 2%;
+}
+
+.topic {
+    color: gray;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 175%;
+    font-weight: bold;
+    color: rgb(31, 32, 36);
+    letter-spacing: 2px;
+}
+
+.ava-inf {
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.ava-set img {
+    float: left;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.ava-set {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.summary {
+    color: gray;
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+.author {
+    color: rgb(31, 32, 36);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 110%;
+}
+
+.content {
+    margin-top: 40px;
+    color: rgb(31, 32, 36);
+    font-weight: 550;
+    font-size: 100%;
+    letter-spacing: 1px;
+    padding-bottom: 100px;
+}
